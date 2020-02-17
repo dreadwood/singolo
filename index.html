@@ -9,71 +9,92 @@
 </head>
 
 <body>
-  <header>
-    <a href="#">
-      Singolo
-      <sup>*</sup>
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <div class="page-header__container container">
+      <a class="page-header__logo logo" href="#">
+        Singolo
+        <span class="logo__sup">*</span>
+      </a>
+      <nav class="page-header__nav">
+        <ul class="nav">
+          <li>
+            <a class="nav__item nav__item--active">Home</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">Services</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">About</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Our Services</h1>
-    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
-      porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-      condimentum nibh.</p>
-    <ul>
-      <li>
-        <h2>Custom Design</h2>
-        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-        </p>
-      </li>
-      <li>
-        <h2>Responsive Layout</h2>
-        <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-      </li>
-      <li>
-        <h2>Inovative Ideas</h2>
-        <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-      </li>
-      <li>
-        <h2>24 / 7 Support</h2>
-        <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis
-          lorem .</p>
-      </li>
-      <li>
-        <h2>Love Is The Answer</h2>
-        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
-        </p>
-      </li>
-      <li>
-        <h2>Feel Like A Star</h2>
-        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-      </li>
-    </ul>
+  <main class="page-main">
+    <section class="slider">
+      <div class="slider__container container">
+        <div class="slider__item">
+          <img src="/assets/slide1.png"
+            alt="Два смартфона похожих на iPhone 5S в горизонтальной и вертикальной ориентации с запупщным приложением">
+        </div>
+        <button class="slider__control slider__control--back" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="slider__control slider__control--next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+      </div>
+    </section>
+    <section class="services container">
+      <h1 class="page-main__title">Our Services</h1>
+      <p class="page-main__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+        commodo luctus, nisi erat
+        porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+        condimentum nibh.</p>
+      <ul class="list">
+        <li class="list__item list__item--design">
+          <h2 class="list__title">Custom Design</h2>
+          <p class="list__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+            ut, ultrices velit.
+          </p>
+        </li>
+        <li class="list__item list__item--ideas">
+          <h2 class="list__title">Inovative Ideas</h2>
+          <p class="list__text">Quisque luctus, quam eget molestie com- modo, lacus purus cursus purus, nec rutrum tellus
+            dolor id lorem.</p>
+        </li>
+        <li class="list__item list__item--love">
+          <h2 class="list__title list__title--love">Love Is The Answer</h2>
+          <p class="list__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+            Quisque condimentum.
+          </p>
+        </li>
+        <li class="list__item list__item--responsive">
+          <h2 class="list__title">Responsive Layout</h2>
+          <p class="list__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
+            Prae- sent elit leo.</p>
+        </li>
+        <li class="list__item list__item--support">
+          <h2 class="list__title">24 / 7 Support</h2>
+          <p class="list__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
+            Pellen- tesque egestas venenatis
+            lorem .</p>
+        </li>
+        <li class="list__item list__item--star">
+          <h2 class="list__title list__title--star">Feel Like A Star</h2>
+          <p class="list__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+            tellus.</p>
+        </li>
+      </ul>
+    </section>
   </main>
-
-  <footer>
-
-  </footer>
 </body>
 
 </html>
