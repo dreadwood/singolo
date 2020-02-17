@@ -36,7 +36,7 @@ img {
   font-family: "Lato";
   src:
     local("Lato"),
-    url("/assets/Lato-light.woff2") format("woff2");
+    url("assets/Lato-light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@ img {
   font-family: "Lato";
   src:
     local("Lato"),
-    url("/assets/Lato-normal.woff2") format("woff2");
+    url("assets/Lato-normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@ img {
   font-family: "Lato";
   src:
     local("Lato"),
-    url("/assets/Lato-bold.woff2") format("woff2");
+    url("assets/Lato-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -66,7 +66,7 @@ img {
   font-family: "Lato";
   src:
     local("Lato"),
-    url("/assets/Lato-black.woff2.woff2") format("woff2");
+    url("assets/Lato-black.woff2.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -232,7 +232,7 @@ img {
   height: 27px;
 
   background-color: transparent;
-  background-image: url("/assets/arrow.png");
+  background-image: url("assets/arrow.png");
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -283,27 +283,27 @@ img {
 }
 
 .list__item--design {
-  background-image: url("/assets/pen.svg");
+  background-image: url("assets/pen.svg");
 }
 
 .list__item--ideas {
-  background-image: url("/assets/bulb.svg");
+  background-image: url("assets/bulb.svg");
 }
 
 .list__item--love {
-  background-image: url("/assets/heart.svg");
+  background-image: url("assets/heart.svg");
 }
 
 .list__item--responsive {
-  background-image: url("/assets/phone.svg");
+  background-image: url("assets/phone.svg");
 }
 
 .list__item--support {
-  background-image: url("/assets/bubble.svg");
+  background-image: url("assets/bubble.svg");
 }
 
 .list__item--star {
-  background-image: url("/assets/star.svg");
+  background-image: url("assets/star.svg");
 }
 
 .list__title {
