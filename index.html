@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Singolo. Full page</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__container container">
+      <!-- Лого сделано из двух разноцветных текстовых документов, согласно заданию (1.2) -->
+      <a class="page-header__logo logo" href="#">
+        Singolo
+        <span class="logo__sup">*</span>
+      </a>
+      <nav class="page-header__nav">
+        <ul class="nav">
+          <li>
+            <a class="nav__item nav__item--active">Home</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">Services</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">About</a>
+          </li>
+          <li>
+            <a class="nav__item nav__item--last" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Main page Singolo</h1>
+
+    <section class="slider">
+      <h2 class="visually-hidden">Slider</h2>
+      <div class="slider__container container">
+        <div class="slider__item">
+          <!-- <img src="assets/slide1.png"
+            alt="Два смартфона похожих на iPhone 5S в горизонтальной и вертикальной ориентации с запупщным приложением"> -->
+          <div class="slider-image"></div>
+        </div>
+        <button class="slider__control slider__control--back" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="slider__control slider__control--next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="services container">
+      <h2 class="page-main__title">Our Services</h2>
+      <p class="page-main__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+        commodo luctus, nisi erat
+        porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+        condimentum nibh.</p>
+      <ul class="list">
+        <li class="list__item list__item--design">
+          <h3 class="list__title">Custom Design</h3>
+          <p class="list__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+            ut, ultrices velit.
+          </p>
+        </li>
+        <li class="list__item list__item--ideas">
+          <h3 class="list__title">Inovative Ideas</h3>
+          <p class="list__text">Quisque luctus, quam eget molestie com- modo, lacus purus cursus purus, nec rutrum
+            tellus
+            dolor id lorem.</p>
+        </li>
+        <li class="list__item list__item--love">
+          <h3 class="list__title list__title--love">Love Is The Answer</h3>
+          <p class="list__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+            Quisque condimentum.
+          </p>
+        </li>
+        <li class="list__item list__item--responsive">
+          <h3 class="list__title">Responsive Layout</h3>
+          <p class="list__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
+            Prae- sent elit leo.</p>
+        </li>
+        <li class="list__item list__item--support">
+          <h3 class="list__title">24 / 7 Support</h3>
+          <p class="list__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
+            Pellen- tesque egestas venenatis
+            lorem .</p>
+        </li>
+        <li class="list__item list__item--star">
+          <h3 class="list__title list__title--star">Feel Like A Star</h3>
+          <p class="list__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+            tellus.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="portfolio">
+      <div class="portfolio__container container">
+        <h2 class="page-main__title">Portfolio</h2>
+        <p class="portfolio__text page-main__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio
+          sem nec elit.</p>
+        <ul class="portfolio__filter">
+          <li>
+            <button class="portfolio__filter-button portfolio__filter-button--active" type="button">All</button>
+          </li>
+          <li>
+            <button class="portfolio__filter-button" type="button">Web Design</button>
+          </li>
+          <li>
+            <button class="portfolio__filter-button" type="button">Graphic Design</button>
+          </li>
+          <li>
+            <button class="portfolio__filter-button" type="button">Artwork</button>
+          </li>
+        </ul>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-1.jpg" width="220" height="187" alt="work 01">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-2.jpg" width="220" height="187" alt="work 02">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-3.jpg" width="220" height="187" alt="work 03">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-4.jpg" width="220" height="187" alt="work 04">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-5.jpg" width="220" height="187" alt="work 05">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-6.jpg" width="220" height="187" alt="work 06">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-7.jpg" width="220" height="187" alt="work 07">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-8.jpg" width="220" height="187" alt="work 08">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-9.jpg" width="220" height="187" alt="work 09">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-10.jpg" width="220" height="187" alt="work 10">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-11.jpg" width="220" height="187" alt="work 11">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__item-link" href="#">
+              <img class="portfolio__img" src="assets/portfolio-12.jpg" width="220" height="187" alt="work 12">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="about-us__container container">
+        <h2 class="page-main__title">About Us</h2>
+        <p class="page-main__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+          commodo, tortor mauris condimentum nibh.</p>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <img class="about-us__item-img" src="assets/people-adam.jpg" width="300" height="300"
+              alt="Photo Adam Jensen">
+            <h3 class="about-us__item-title">Adam Jensen</h3>
+            <p class="about-us__item-text about-us__item-text--adam">Quisque luctus, quam eget molestie commodo, lacus
+              purus cursus purus, nec
+              rutrum tellus dolor id lorem.</p>
+            <ul class="about-us__item-social">
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--fb" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--google" href="#">
+                  <span class="visually-hidden">Google+</span>
+                </a>
+              </li>
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--tw" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--linkedin" href="#">
+                  <span class="visually-hidden">LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="about-us__item">
+            <img class="about-us__item-img" src="assets/people-desmond.jpg" width="300" height="300"
+              alt="Photo Desmond Miles">
+            <h3 class="about-us__item-title">Desmond Miles</h3>
+            <p class="about-us__item-text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
+              viverra lacus ut, ultrices velit.</p>
+            <ul class="about-us__item-social">
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--fb" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--google" href="#">
+                  <span class="visually-hidden">Google+</span>
+                </a>
+              </li>
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--tw" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--linkedin" href="#">
+                  <span class="visually-hidden">LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="about-us__item">
+            <img class="about-us__item-img" src="assets/people-scolara.jpg" width="300" height="300"
+              alt="Photo Scolara Visari">
+            <h3 class="about-us__item-title">Scolara Visari</h3>
+            <p class="about-us__item-text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+              consequat felis. Quisque condimentum.</p>
+            <ul class="about-us__item-social">
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--fb" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--google" href="#">
+                  <span class="visually-hidden">Google+</span>
+                </a>
+              </li>
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--tw" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li class="about-us__icon-social">
+                <a class="about-us__icon-link about-us__icon-link--linkedin" href="#">
+                  <span class="visually-hidden">LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="form__container container">
+        <h2 class="form__title page-main__title">Get a Quote</h2>
+        <p class="form__text page-main__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+          mollis,non
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+          commodo, tortor mauris condimentum nibh.</p>
+        <div class="form__wrapper">
+          <form class="form__fieldset" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="form__input" type="text" name="name" required autocomplete="off"
+              placeholder="Name (Required)">
+            <input class="form__input" type="email" name="email" required autocomplete="off"
+              placeholder="Email (Required)">
+            <input class="form__input" type="text" name="subject" autocomplete="off" placeholder="Subject">
+            <textarea class="form__textarea" name="description"
+              placeholder="Describe your project in detail..."></textarea>
+            <button class="form__button" type="submit">Submit</button>
+          </form>
+
+          <div class="form__contact contact">
+            <h3 class="contact__title">Contact Information</h3>
+            <p class="contact__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae
+              aliquam
+              tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+              et consequat felis.</p>
+            <ul class="contact__adress-list">
+              <li>
+                <a class="contact__adress-item contact__adress-item--location"
+                  href="https://goo.gl/maps/2HL9JGWEbbx4NDuK9">Elm St. 14/05 Lost City</a>
+              </li>
+              <li>
+                <a class="contact__adress-item contact__adress-item--tel" href="tel:035283318635">03528 331 86 35</a>
+              </li>
+              <li>
+                <a class="contact__adress-item contact__adress-item--email"
+                  href="mailto:info@singolo.com">info@singolo.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <p class="page-footer__copyright">&copy; Copyright 2013</p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--google" href="#">
+            <span class="visually-hidden">Google+</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tw" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--linkedin" href="#">
+            <span class="visually-hidden">LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
