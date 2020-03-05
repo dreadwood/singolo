@@ -278,8 +278,6 @@ img {
     url("assets/shadow-horizontal.png");
 }
 
-
-
 .slider__image-bg {
   position: absolute;
 
@@ -307,14 +305,6 @@ img {
   background-image: url("assets/layer-full-horizontal.png");
   background-position: -125px -119px;
 }
-
-
-
-
-
-
-
-
 
 .slider__control {
   position: absolute;
