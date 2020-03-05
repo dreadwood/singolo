@@ -145,7 +145,7 @@ img {
 }
 
 .form__fieldset {
-  width: 620px;
+  width: 619px;
 }
 
 .form__input {
@@ -263,6 +263,8 @@ img {
 }
 
 .contact__adress-item {
+  position: relative;
+
   color: #f0d8d9;
 }
 
@@ -271,12 +273,40 @@ img {
   text-decoration: underline;
 }
 
+.contact__adress-item::before {
+  content: "";
 
+  position: absolute;
 
+  background-repeat: no-repeat;
+}
 
+.contact__adress-item--location::before {
+  left: -20px;
+  top: 2px;
 
+  width: 7px;
+  height: 11px;
+  background-image: url("assets/icon-location.png");
+}
 
+.contact__adress-item--tel::before {
+  left: -22px;
+  top: 1px;
 
+  width: 11px;
+  height: 11px;
+  background-image: url("assets/icon-phone.png");
+}
+
+.contact__adress-item--email::before {
+  left: -23px;
+  top: 4px;
+
+  width: 13px;
+  height: 8px;
+  background-image: url("assets/icon-mail.png");
+}
 
 .page-footer {
   background-color: #2d303a;
