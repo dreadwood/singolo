@@ -4,19 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <title>Singolo. Part 3</title>
-  <link rel="stylesheet" href="singolo2.css">
+  <link rel="stylesheet" href="singolo3.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <main>
     <section class="form">
+      <div class="form__container container">
+        <h2 class="form__title page-main__title">Get a Quote</h2>
+        <p class="form__text page-main__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+          mollis,non
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+          commodo, tortor mauris condimentum nibh.</p>
+        <!-- поменять action -->
+        <div class="form__wrapper">
+          <form class="form__fieldset" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="form__input" type="text" name="name" required autocomplete="off"
+              placeholder="Name (Required)">
+            <input class="form__input" type="email" name="email" required autocomplete="off"
+              placeholder="Email (Required)">
+            <input class="form__input" type="text" name="subject" autocomplete="off" placeholder="Subject">
+            <textarea class="form__textarea" name="description"
+              placeholder="Describe your project in detail..."></textarea>
+            <button class="form__button" type="submit">Submit</button>
+          </form>
 
+          <div class="form__contact contact">
+            <h3 class="contact__title">Contact Information</h3>
+            <p class="contact__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae
+              aliquam
+              tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+              et consequat felis.</p>
+            <ul class="contact__adress-list">
+              <li>
+                <a class="contact__adress-item" href="https://goo.gl/maps/2HL9JGWEbbx4NDuK9">Elm St. 14/05 Lost City</a>
+              </li>
+              <li>
+                <a class="contact__adress-item" href="tel:035283318635">03528 331 86 35</a>
+              </li>
+              <li>
+                <a class="contact__adress-item" href="mailto:info@singolo.com">info@singolo.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-
+    <div class="page-footer__container container">
+      <p class="page-footer__copyright">&copy; Copyright 2013</p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--google" href="#">
+            <span class="visually-hidden">Google+</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tw" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--linkedin" href="#">
+            <span class="visually-hidden">LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 
