@@ -236,33 +236,85 @@ img {
 .slider__container {
   position: relative;
 
-  padding-top: 53px;
-  padding-bottom: 56px;
+  display: flex;
+  justify-content: center;
+  padding-top: 46px;
+  padding-bottom: 54px;
 }
 
 .slider__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 500px;
+
   text-align: center;
 }
 
-.slider-image {
-  height: 491px;
+.slider__image {
+  position: relative;
+
+  background-repeat: no-repeat;
+}
+
+.slider__image--vertical {
+  width: 244px;
+  height: 486px;
+  margin-left: 2px;
 
   background-image:
-    url("assets/layer-vertical.png"),
     url("assets/iphone-vertical.png"),
-    url("assets/shadow-vertical.png"),
-    url("assets/layer-horizontal.png"),
+    url("assets/shadow-vertical.png");
+}
+
+.slider__image--horizontal {
+  width: 486px;
+  height: 244px;
+  margin-right: -1px;
+
+  background-image:
     url("assets/iphone-horizontal.png"),
     url("assets/shadow-horizontal.png");
-  background-repeat: no-repeat;
-  background-position:
-    83px 62px,
-    72px 0px,
-    72px 0px,
-    442px 132px,
-    385px 121px,
-    385px 121px;
 }
+
+
+
+.slider__image-bg {
+  position: absolute;
+
+  background-repeat: no-repeat;
+}
+
+.slider__image-bg--vertical {
+  top: 65px;
+  left: 14px;
+
+  width: 188px;
+  height: 333px;
+
+  background-image: url("assets/layer-full-vertical.jpg");
+  background-position: -14px -135px;
+}
+
+.slider__image-bg--horizontal {
+  top: 14px;
+  left: 60px;
+
+  width: 333px;
+  height: 188px;
+
+  background-image: url("assets/layer-full-horizontal.png");
+  background-position: -125px -119px;
+}
+
+
+
+
+
+
+
+
 
 .slider__control {
   position: absolute;
