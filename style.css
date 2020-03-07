@@ -425,6 +425,10 @@ img {
   font-style: normal;
   text-align: justify;
   color: #767e9e;
+
+  /* Добавил для выполнения критерия */
+  height: 63px;
+  overflow-y: hidden;
 }
 
 .list__text--support {
