@@ -697,6 +697,10 @@ img {
   color: #f48c8f;
 }
 
+.form__input:required:invalid:focus {
+  background-color: #2d303a;
+}
+
 .form__textarea {
   width: 100%;
   height: 202px;
