@@ -365,12 +365,13 @@ img {
   padding-left: 80px;
 
   background-repeat: no-repeat;
-  background-size: 61px 61px;
-  background-position: 0 1px;
+  background-size: 59px 59px;
+  background-position: 0 2px;
 }
 
 .list__item--design {
   background-image: url("assets/pen.svg");
+  background-position: 1px 2px;
 }
 
 .list__item--ideas {
@@ -383,6 +384,7 @@ img {
 
 .list__item--responsive {
   background-image: url("assets/phone.svg");
+  background-position: 1px 2px;
 }
 
 .list__item--support {
