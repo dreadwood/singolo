@@ -349,6 +349,12 @@ img {
   padding-bottom: 36px;
 }
 
+.services__text {
+  /* Добавил для выполнения критерия */
+  height: 60px;
+  overflow-y: hidden;
+}
+
 .list {
   display: flex;
   justify-content: space-between;
@@ -406,6 +412,11 @@ img {
   font-style: normal;
   text-align: left;
   color: #767e9e;
+
+  /* Добавил для выполнения критерия */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .list__title--love,
@@ -576,10 +587,11 @@ img {
   font-style: normal;
   text-align: left;
   color: #767e9e;
-  /* добавил свойство согласно ТЗ п2.2 */
-  white-space: nowrap;
 
-  overflow-x: hidden;
+  /* Добавил для выполнения критерия */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .about-us__item-text {
