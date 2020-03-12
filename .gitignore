@@ -1,4 +1,5 @@
 .DS_Store
+Thumbs.db
 .idea
 *.ai
 *.log
@@ -6,6 +7,5 @@
 *.psd
 *.sublime*
 *.editorconfig
-markup/
-Thumbs.db
+materials/
 .vscode/
