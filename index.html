@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body id="home">
+
   <header class="page-header">
     <div class="page-header__container container">
       <!-- Лого сделано из двух разноцветных текстовых документов, согласно заданию (1.2) -->
@@ -19,19 +20,19 @@
       <nav class="page-header__nav">
         <ul class="nav">
           <li>
-            <a class="nav__item nav__item--active">Home</a>
+            <a class="nav__item nav__item--active" href="#home">Home</a>
           </li>
           <li>
-            <a class="nav__item" href="#">Services</a>
+            <a class="nav__item" href="#services">Services</a>
           </li>
           <li>
-            <a class="nav__item" href="#">Portfolio</a>
+            <a class="nav__item" href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a class="nav__item" href="#">About</a>
+            <a class="nav__item" href="#about">About</a>
           </li>
           <li>
-            <a class="nav__item nav__item--last" href="#">Contact</a>
+            <a class="nav__item nav__item--last" href="#form">Contact</a>
           </li>
         </ul>
       </nav>
@@ -41,7 +42,7 @@
   <main class="page-main">
     <h1 class="visually-hidden">Main page Singolo</h1>
 
-    <section class="slider">
+    <section id="slider" class="slider section">
       <h2 class="visually-hidden">Slider</h2>
       <div class="slider__container container">
         <div class="slider__item">
@@ -63,7 +64,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services section">
       <div class="services__container container">
         <h2 class="page-main__title">Our Services</h2>
         <p class="page-main__text services__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -96,7 +97,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio section">
       <div class="portfolio__container container">
         <h2 class="page-main__title">Portfolio</h2>
         <p class="portfolio__text page-main__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -179,7 +180,7 @@
       </div>
     </section>
 
-    <section class="about-us">
+    <section id="about" class="about-us section">
       <div class="about-us__container container">
         <h2 class="page-main__title">About Us</h2>
         <p class="page-main__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -272,7 +273,7 @@
       </div>
     </section>
 
-    <section class="form">
+    <section id="form" class="form section">
       <div class="form__container container">
         <h2 class="form__title page-main__title">Get a Quote</h2>
         <p class="form__text page-main__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -337,6 +338,7 @@
       </ul>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

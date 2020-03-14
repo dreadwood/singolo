@@ -94,7 +94,18 @@ img {
   padding: 0 40px;
 }
 
+/* Чтобы header не наплывал на заголовок section */
+.section {
+	padding-top: 55px;
+	margin-top: -55px;
+	background-clip: content-box;
+}
+
 .page-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
   background-image: linear-gradient(to top, #323746 6px, #2d303a 6px);
 }
 
