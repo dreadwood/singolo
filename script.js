@@ -22,11 +22,49 @@ nav.addEventListener('click', function (evt) {
 });
 
 
+// Слайдер карусель
+let sliderSection = document.querySelector('.slider')
+let sliderButtonBack = sliderSection.querySelector('.slider__control--back');
+let sliderButtonNext = sliderSection.querySelector('.slider__control--next');
+let sliders = sliderSection.querySelectorAll('.slider__item');
+let curentSlide = 0;
+
+function changeSlider () {
+  sliderSection.classList.toggle('slider--blue');
+  sliders.forEach(function(slide) {
+    slide.classList.remove('slider__item--active');
+  });
+  sliders[curentSlide].classList.add('slider__item--active');
+};
+
+sliderButtonBack.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  if (curentSlide > 0) {
+    curentSlide--;
+  } else {
+    curentSlide = sliders.length - 1;
+  }
+  changeSlider();
+})
+
+sliderButtonNext.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  if (curentSlide < sliders.length - 1) {
+    curentSlide++;
+  } else {
+    curentSlide = 0;
+  }
+  changeSlider();
+})
+
+
 // Переключение экрана у слайдера
 let buttonVerticalPhone = document.querySelector('.slider__button-home--vertical');
 let buttonHorizontalPhone = document.querySelector('.slider__button-home--horizontal');
+let buttonSlider2Phone = document.querySelector('.slider__button-home--slide2');
 let backgroundVerticalPhone = document.querySelector('.slider__image-bg--vertical');
 let backgroundHorizontalPhone = document.querySelector('.slider__image-bg--horizontal');
+let backgroundSlide2Phone = document.querySelector('.slider__item--slide2 .slider__image-bg');
 
 buttonVerticalPhone.addEventListener('click', function () {
   backgroundVerticalPhone.classList.toggle('slider__image-bg--hidden')
@@ -34,6 +72,10 @@ buttonVerticalPhone.addEventListener('click', function () {
 
 buttonHorizontalPhone.addEventListener('click', function () {
   backgroundHorizontalPhone.classList.toggle('slider__image-bg--hidden')
+});
+
+buttonSlider2Phone.addEventListener('click', function () {
+  backgroundSlide2Phone.classList.toggle('slider__image-bg--slide2')
 });
 
 
