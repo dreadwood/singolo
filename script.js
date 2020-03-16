@@ -79,6 +79,18 @@ buttonSlider2Phone.addEventListener('click', function () {
 });
 
 
+// Активация в портфолио
+let works = document.querySelectorAll('.portfolio__item-link');
+works.forEach(function (work) {
+  work.addEventListener('click', function () {
+    works.forEach(function(itemWork) {
+      itemWork.classList.remove('portfolio__item-link--active');
+    })
+    work.classList.add('portfolio__item-link--active');
+  })
+});
+
+
 // Отправка формы
 let form = document.querySelector('.form__fieldset');
 let formSubject = form.querySelector('.form__input--subject');

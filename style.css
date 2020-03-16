@@ -608,9 +608,14 @@ img {
   display: block;
 }
 
-.portfolio__item-link[href]:hover,
-.portfolio__item-link[href]:focus {
+.portfolio__item-link:hover,
+.portfolio__item-link:focus {
   opacity: 0.5;
+}
+
+.portfolio__item-link--active .portfolio__img {
+  box-shadow: 0 0 0 5px #F06C64;
+  border-radius: 5px;
 }
 
 .portfolio__img {
