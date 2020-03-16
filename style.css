@@ -102,7 +102,7 @@ img {
 }
 
 .page-header {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 10;
 
@@ -250,18 +250,30 @@ img {
 
   display: flex;
   justify-content: center;
-  padding-top: 46px;
-  padding-bottom: 54px;
+  flex-wrap: wrap;
+  padding: 0;
+  /* padding-top: 46px;
+  padding-bottom: 54px; */
 }
 
 .slider__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 800px;
-  height: 500px;
+  width: 1020px;
+  height: 600px;
+  padding: 0 110px 8px 110px;
 
   text-align: center;
+}
+
+.slider__item--slide2 {
+  display: none;
+
+  background-color: #648BF0;
+  background-image: url('assets/slide2.png');
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .slider__image {
@@ -959,4 +971,89 @@ img {
 
 .social__link--linkedin {
   background-image: url("assets/icon-linkedin.png")
+}
+
+
+.modal {
+  position: fixed;
+  top: 100px;
+  left: calc(50% - 250px);
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  padding: 20px 40px;
+
+  background-color: #f06c64;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px 0px #767e9e;
+}
+
+.modal--hidden {
+  display: none;
+}
+
+.modal__title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: "Lato", Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  color: #f0d8d9;
+}
+
+.modal__text {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: "Lato", Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #f0d8d9;
+}
+
+.modal__text--description {
+  max-height: 266px;
+  margin-bottom: 20px;
+
+  overflow: hidden;
+}
+
+.modal__button {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 120px;
+  padding: 8px 10px 8px 15px;
+  font-family: "Lato", Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: #f0d8d9;
+
+
+  background-color: #d6564f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal__button:hover,
+.fmodal__button:focus {
+  background-color: #2d303a;
+}
+
+.modal__button:active {
+  color: #666d89;
 }

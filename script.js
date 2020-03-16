@@ -21,6 +21,7 @@ nav.addEventListener('click', function (evt) {
   section[evt.target.hash].scrollIntoView({block: "start", behavior: "smooth"});
 });
 
+
 // Переключение экрана у слайдера
 let buttonVerticalPhone = document.querySelector('.slider__button-home--vertical');
 let buttonHorizontalPhone = document.querySelector('.slider__button-home--horizontal');
@@ -34,3 +35,39 @@ buttonVerticalPhone.addEventListener('click', function () {
 buttonHorizontalPhone.addEventListener('click', function () {
   backgroundHorizontalPhone.classList.toggle('slider__image-bg--hidden')
 });
+
+
+// Отправка формы
+let form = document.querySelector('.form__fieldset');
+let formSubject = form.querySelector('.form__input--subject');
+let formDescription = form.querySelector('.form__textarea');
+let modal = document.querySelector('.modal');
+let modaltSubject = modal.querySelector('.modal__text--subject');
+let modalDescription = modal.querySelector('.modal__text--description');
+let modalButton = modal.querySelector('.modal__button');
+
+function modalCloseHandler (evt) {
+  evt.preventDefault();
+  modal.classList.add('modal--hidden');
+  form.reset();
+  modalButton.removeEventListener('click', modalCloseHandler);
+}
+
+form.addEventListener('submit', function (evt) {
+  evt.preventDefault();
+  modal.classList.remove('modal--hidden');
+
+  if (formSubject.value !== '') {
+    modaltSubject.textContent = 'Subject: ' + formSubject.value;
+  } else {
+    modaltSubject.innerText = 'Without subject';
+  }
+
+  if (formDescription.value !== '') {
+    modalDescription.textContent = 'Description: ' + formDescription.value
+  } else {
+    modalDescription.textContent = 'Without description';
+  }
+
+  modalButton.addEventListener('click', modalCloseHandler);
+})
