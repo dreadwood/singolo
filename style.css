@@ -318,6 +318,32 @@ img {
   background-position: -125px -119px;
 }
 
+.slider__image-bg--hidden {
+  display: none;
+}
+
+.slider__button-home {
+  position: absolute;
+
+  width: 42px;
+  height: 42px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.slider__button-home--vertical {
+  top: 408px;
+  left: 86px;
+}
+
+.slider__button-home--horizontal {
+  top: 86px;
+  left: 8px;
+}
+
 .slider__control {
   position: absolute;
   top: 281px;

@@ -20,3 +20,17 @@ nav.addEventListener('click', function (evt) {
   evt.target.classList.add('nav__item--active');
   section[evt.target.hash].scrollIntoView({block: "start", behavior: "smooth"});
 });
+
+// Переключение экрана у слайдера
+let buttonVerticalPhone = document.querySelector('.slider__button-home--vertical');
+let buttonHorizontalPhone = document.querySelector('.slider__button-home--horizontal');
+let backgroundVerticalPhone = document.querySelector('.slider__image-bg--vertical');
+let backgroundHorizontalPhone = document.querySelector('.slider__image-bg--horizontal');
+
+buttonVerticalPhone.addEventListener('click', function () {
+  backgroundVerticalPhone.classList.toggle('slider__image-bg--hidden')
+});
+
+buttonHorizontalPhone.addEventListener('click', function () {
+  backgroundHorizontalPhone.classList.toggle('slider__image-bg--hidden')
+});
