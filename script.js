@@ -21,6 +21,21 @@ nav.addEventListener('click', function (evt) {
   section[evt.target.hash].scrollIntoView({block: "start", behavior: "smooth"});
 });
 
+// document.addEventListener('scroll', function (evt) {
+//   let section = document.querySelectorAll('section');
+//   let currentY = window.scrollY;
+//   // console.log(window.scrollY);
+
+//   section.forEach(function (item) {
+//     if (item.offsetTop <= currentY) {
+//       navItems.forEach(function (item) {
+//         item.classList.remove('nav__item--active');
+//       });
+//     }
+//     console.log(item.offsetTop)
+//   })
+// })
+
 
 // Слайдер карусель
 let sliderSection = document.querySelector('.slider')
@@ -79,14 +94,19 @@ buttonSlider2Phone.addEventListener('click', function () {
 });
 
 
-// Активация в портфолио
+// Фильтр работ в портфолио
+
+
+// Взаимодействие с работой в портфолио
 let works = document.querySelectorAll('.portfolio__item-link');
 works.forEach(function (work) {
   work.addEventListener('click', function () {
-    works.forEach(function(itemWork) {
-      itemWork.classList.remove('portfolio__item-link--active');
-    })
-    work.classList.add('portfolio__item-link--active');
+    if (!work.classList.contains('portfolio__item-link--active')) {
+      works.forEach(function(itemWork) {
+        itemWork.classList.remove('portfolio__item-link--active');
+      });
+    }
+    work.classList.toggle('portfolio__item-link--active');
   })
 });
 
