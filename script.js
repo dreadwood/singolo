@@ -95,6 +95,107 @@ buttonSlider2Phone.addEventListener('click', function () {
 
 
 // Фильтр работ в портфолио
+let portfolioList = document.querySelector('.portfolio__list');
+let allWorks = document.querySelectorAll('.portfolio__item');
+let graphicWorks = document.querySelectorAll('.portfolio__item--graphic');
+let webWorks = document.querySelectorAll('.portfolio__item--web');
+let artworkWorks = document.querySelectorAll('.portfolio__item--artwork');
+
+let allButtons = document.querySelectorAll('.portfolio__filter-button');
+let allButton = document.querySelector('.portfolio__filter-button--all');
+let webButton = document.querySelector('.portfolio__filter-button--web');
+let graphicButton = document.querySelector('.portfolio__filter-button--graphic');
+let artworkButton = document.querySelector('.portfolio__filter-button--artwork');
+
+// let portfolioWorks = {
+//   all: document.querySelectorAll('.portfolio__item'),
+//   graphic: document.querySelectorAll('.portfolio__item--graphic'),
+//   web: document.querySelectorAll('.portfolio__item--web'),
+//   artwork: document.querySelectorAll('.portfolio__item--artwork'),
+// };
+
+// let portfolioButtons = {
+//   all: document.querySelector('.portfolio__filter-button--all'),
+//   web: document.querySelector('.portfolio__filter-button--web'),
+//   graphic: document.querySelector('.portfolio__filter-button--graphic'),
+//   artwork: document.querySelector('.portfolio__filter-button--artwork')
+// };
+
+allButton.addEventListener('click', function (evt) {
+  allButtons.forEach(function (button) {
+    button.classList.remove('portfolio__filter-button--active');
+  });
+  evt.target.classList.add('portfolio__filter-button--active');
+  allWorks.forEach(function (work) {
+    work.remove();
+  });
+  graphicWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+  webWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+  artworkWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+});
+
+webButton.addEventListener('click', function (evt) {
+  allButtons.forEach(function (button) {
+    button.classList.remove('portfolio__filter-button--active');
+  });
+  evt.target.classList.add('portfolio__filter-button--active');
+  allWorks.forEach(function (work) {
+    work.remove();
+  });
+  webWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+  artworkWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+  graphicWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+});
+
+graphicButton.addEventListener('click', function (evt) {
+  allButtons.forEach(function (button) {
+    button.classList.remove('portfolio__filter-button--active');
+  });
+  evt.target.classList.add('portfolio__filter-button--active');
+  allWorks.forEach(function (work) {
+    work.remove();
+  });
+  graphicWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+  webWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+  artworkWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+});
+
+artworkButton.addEventListener('click', function (evt) {
+  allButtons.forEach(function (button) {
+    button.classList.remove('portfolio__filter-button--active');
+  });
+  evt.target.classList.add('portfolio__filter-button--active');
+  allWorks.forEach(function (work) {
+    work.remove();
+  });
+  artworkWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+  graphicWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+  webWorks.forEach(function (work) {
+    portfolioList.appendChild(work);
+  });
+});
 
 
 // Взаимодействие с работой в портфолио
