@@ -82,15 +82,15 @@ let backgroundHorizontalPhone = document.querySelector('.slider__image-bg--horiz
 let backgroundSlide2Phone = document.querySelector('.slider__item--slide2 .slider__image-bg');
 
 buttonVerticalPhone.addEventListener('click', function () {
-  backgroundVerticalPhone.classList.toggle('slider__image-bg--hidden')
+  backgroundVerticalPhone.classList.toggle('slider__image-bg--off')
 });
 
 buttonHorizontalPhone.addEventListener('click', function () {
-  backgroundHorizontalPhone.classList.toggle('slider__image-bg--hidden')
+  backgroundHorizontalPhone.classList.toggle('slider__image-bg--off')
 });
 
 buttonSlider2Phone.addEventListener('click', function () {
-  backgroundSlide2Phone.classList.toggle('slider__image-bg--slide2')
+  backgroundSlide2Phone.classList.toggle('slider__image-bg--off')
 });
 
 
