@@ -1,5 +1,21 @@
 'use strict';
 
+// Мобильное меню
+let header = document.querySelector('.page-header');
+let headerButton = document.querySelector('.page-header__toogle');
+let headerShadow = document.querySelector('.page-header__shadow')
+
+headerButton.addEventListener('click', function(evt) {
+  evt.preventDefault;
+  header.classList.toggle('page-header--open');
+});
+
+headerShadow.addEventListener('click', function(evt) {
+  evt.preventDefault;
+  header.classList.toggle('page-header--open');
+});
+
+
 // Переход по странице с помощью навигации в header
 let nav = document.querySelector('.nav');
 let navItems = nav.querySelectorAll('.nav__item');
@@ -18,6 +34,7 @@ nav.addEventListener('click', function (evt) {
     item.classList.remove('nav__item--active');
   });
   evt.target.classList.add('nav__item--active');
+  header.classList.toggle('page-header--open');
   section[evt.target.hash].scrollIntoView({block: "start", behavior: "smooth"});
 });
 
@@ -129,15 +146,15 @@ allButton.addEventListener('click', function (evt) {
   allWorks.forEach(function (work) {
     work.remove();
   });
-  graphicWorks.forEach(function (work) {
+  allWorks.forEach(function (work) {
     portfolioList.appendChild(work);
   });
-  webWorks.forEach(function (work) {
-    portfolioList.appendChild(work);
-  });
-  artworkWorks.forEach(function (work) {
-    portfolioList.appendChild(work);
-  });
+  // webWorks.forEach(function (work) {
+  //   portfolioList.appendChild(work);
+  // });
+  // artworkWorks.forEach(function (work) {
+  //   portfolioList.appendChild(work);
+  // });
 });
 
 webButton.addEventListener('click', function (evt) {

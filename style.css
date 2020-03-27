@@ -127,6 +127,16 @@ img {
   margin-bottom: 1px;
 }
 
+.page-header__toogle {
+  display: none;
+}
+
+.page-header__shadow {
+  display: none;
+}
+
+
+
 .logo {
   font-family: "Lato", Tahoma, sans-serif;
   font-size: 25px;
@@ -1110,7 +1120,7 @@ img {
 
 
 
-@media (min-width: 768px) and (max-width:  1020px) {
+@media (max-width:  1019px) {
   .container {
     width: auto;
   }
@@ -1129,15 +1139,12 @@ img {
     padding: 0 10.98% 7px 10.98%;
   }
 
-
-
   .slider__image--vertical {
     width: 180.85px;
     height: 363.74px;
 
     background-size: 180.85px 363.74px;
   }
-
 
   .slider__image--horizontal {
     width: 364.21px;
@@ -1147,15 +1154,20 @@ img {
     background-size: 364.21px 180.93px;
   }
 
+  .slider__control {
+    top: 47%;
+  }
 
+  .slider__control--back {
+    left: 3.8%;
+  }
 
-
+  .slider__control--next {
+    right: 3.5%;
+  }
 
   .services__container {
-    padding-top: 42px;
-    padding-right: 74px;
-    padding-bottom: 25px;
-    padding-left: 41px;
+    padding: 42px 74px 25px 41px;
   }
 
   .services__text {
@@ -1165,7 +1177,6 @@ img {
 
   .list__item {
     margin-bottom: 52px;
-    padding-left: 80px;
 
     background-size: 60px 60px;
     background-position: 0 0;
@@ -1197,6 +1208,11 @@ img {
     margin-left: 0;
   }
 
+  .portfolio__container {
+    padding-right: 41px;
+    padding-left: 41px;
+  }
+
   .portfolio__text {
     min-height: 61px;
     margin-bottom: 11px;
@@ -1212,12 +1228,14 @@ img {
   }
 
   .portfolio__item {
-    margin-right: 20px;
-    margin-bottom: 20px;
+    flex-basis: 30%;
+    flex-grow: 2;
+    margin-right: 19.65px;
+    margin-bottom: 19.65px;
   }
 
   .portfolio__item:nth-child(4n+4) {
-    margin-right: 20px;
+    margin-right: 19.65px;
   }
 
   .portfolio__item:nth-child(3n+3) {
@@ -1225,7 +1243,7 @@ img {
   }
 
   .portfolio__img {
-    width: 216px;
+    width: 100%;
     height: auto;
   }
 
@@ -1272,10 +1290,7 @@ img {
   }
 
   .form__container {
-    padding-top: 56px;
-    padding-right: 38px;
-    padding-bottom: 45px;
-    padding-left: 42px;
+    padding: 56px 38px 45px 42px;
   }
 
   .form__text {
@@ -1319,5 +1334,307 @@ img {
 
   .social {
     margin-top: -2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-right: 30px;
+    padding-left:  30px;
+  }
+
+
+  /* Стили хедера */
+
+  .page-header__container {
+    justify-content: center;
+    min-height: 71px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    padding-left: 42px;
+  }
+
+  .page-header__toogle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    display: block;
+    width: 71px;
+    height: 71px;
+    padding: 0;
+
+    background-color: transparent;
+    background-image: url(assets/icon-burger.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 26px;
+    border: none;
+  }
+
+  .page-header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    display: none;
+    width: 278px;
+    height: 100vh;
+    padding-left: 71px;
+
+    background-color: #2D303A;
+    box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .page-header__shadow {
+    position: absolute;
+    z-index: 1;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: #2D303A;
+    opacity: 0.6;
+  }
+
+  .logo {
+    z-index: 5;
+
+    font-size: 19.6875px;
+    line-height: 24px;
+  }
+
+  .nav {
+    position: relative;
+    top: 232px;
+    z-index: 5;
+  }
+
+  .nav__item {
+    display: block;
+    width: 200px;
+    margin-bottom: 28px;
+
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.035em;
+    word-wrap: break-word;
+  }
+
+  .nav__item::after {
+    display: none;
+  }
+
+  .page-header--open .page-header__toogle {
+    background-position: 24px 29px;
+    transform: rotate(90deg);
+  }
+
+  .page-header--open .page-header__logo {
+    position: fixed;
+    top: 25px;
+    left: 71px;
+
+  }
+
+  .page-header--open .page-header__nav {
+    display: block;
+  }
+
+  .page-header--open .page-header__shadow {
+    display: block;
+  }
+
+
+
+
+
+
+
+  .slider__container {
+    padding: 0;
+  }
+
+  .slider__item--slide1 {
+    padding: 0 11.3% 3px 10.8%;
+  }
+
+  .slider__image--vertical {
+    width: 88.3px;
+    height: 177.61px;
+
+    background-size: 88.3px 177.61px;
+  }
+
+  .slider__image--horizontal {
+    width: 177.84px;
+    height: 88.35px;
+    margin-top: 0;
+
+    background-size: 177.84px 88.35px;
+  }
+
+  .slider__control {
+    top: 44.4%;
+
+    width: 14.08px;
+    height: 24.9px;
+
+    background-size: 14.08px 24.9px;
+  }
+
+  .slider__control--back {
+    left: 2.6%;
+  }
+
+  .slider__control--next {
+    right: 2.5%;
+  }
+
+  .services__container {
+    padding: 28px 30px 0 32px;
+  }
+
+  .services__text {
+    height: 204px;
+    margin-bottom: 35px;
+  }
+
+  .list__item {
+    margin-bottom: 28px;
+
+    background-size: 60px 60px;
+    background-position: 0 0;
+  }
+
+  .portfolio__container {
+    padding-top: 45px;
+    padding-bottom: 26px;
+  }
+
+  .portfolio__text {
+    margin-bottom: 16px;
+  }
+
+  .portfolio__filter {
+    margin-bottom: 25px;
+  }
+
+  .portfolio__list {
+    margin-left: 0;
+  }
+
+  .portfolio__item {
+    flex-basis: 40%;
+    flex-grow: 2;
+    margin-right: 13px;
+    margin-bottom: 14px;
+  }
+
+  .portfolio__item:nth-child(4n+4) {
+    margin-right: 13px;
+  }
+
+  .portfolio__item:nth-child(3n+3) {
+    margin-right: 13px;
+  }
+
+  .portfolio__item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .portfolio__item:nth-child(n+9) {
+    display: none;
+  }
+
+  .about-us__container {
+    padding-top: 36px;
+    padding-bottom: 11px;
+  }
+
+  .about-us__list {
+    margin-left: 1px;
+  }
+
+  .about-us__text {
+    margin-bottom: 24px;
+    /* delete */
+    height: 210px;
+  }
+
+  .about-us__item {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+  .about-us__item-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 9px;
+  }
+
+  .about-us__item-text {
+    height: 44px;
+    margin-bottom: 11px;
+  }
+
+  .form__container {
+    padding-top: 47px;
+    padding-bottom: 40px;
+  }
+
+  .form__text {
+    margin-bottom: 23px;
+  }
+
+  .form__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset {
+    width: 100%;
+    margin-bottom: 32px;
+    margin-left: 0;
+  }
+
+  .form__input {
+    padding: 9px 10px 7px 7px;
+  }
+
+  .form__textarea {
+    margin-bottom: 6px;
+    padding: 5px 10px 8px 7px;
+  }
+
+  .form__button {
+    width: 100%;
+    padding: 14px 10px 14px 10px;
+  }
+
+  .form__contact {
+    width: 100%;
+  }
+
+  .contact__text {
+    margin-bottom: 9px;
+  }
+
+  .contact__adress-item {
+    line-height: 25px;
+  }
+
+  .page-footer__container {
+    justify-content: center;
+  }
+
+  .page-footer__copyright {
+    display: none;
+  }
+
+  .modal {
+    left: 10%;
+
+    width: 80%;
   }
 }
