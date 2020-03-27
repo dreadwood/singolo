@@ -30,12 +30,14 @@ let section = {
 
 nav.addEventListener('click', function (evt) {
   evt.preventDefault();
-  navItems.forEach(function (item) {
-    item.classList.remove('nav__item--active');
-  });
-  evt.target.classList.add('nav__item--active');
-  header.classList.toggle('page-header--open');
-  section[evt.target.hash].scrollIntoView({block: "start", behavior: "smooth"});
+  if (evt.target.classList.contains('nav__item')) {
+    navItems.forEach(function (item) {
+      item.classList.remove('nav__item--active');
+    });
+    evt.target.classList.add('nav__item--active');
+    header.classList.toggle('page-header--open');
+    section[evt.target.hash].scrollIntoView({block: "start", behavior: "smooth"});
+  };
 });
 
 // document.addEventListener('scroll', function (evt) {

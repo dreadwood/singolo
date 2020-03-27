@@ -257,11 +257,17 @@ img {
 }
 
 .slider {
-  background-image: linear-gradient(to top, #ea676b 6px, #f06c64 6px);
+  /* background-image: linear-gradient(to top, #ea676b 6px, #f06c64 6px); */
+  background-color: #f06c64;
+  box-shadow: 0 -6px 0 0 #ea676b inset;
+  transition: all 0.5s ease-in-out;
 }
 
 .slider--blue {
-  background-image: linear-gradient(to top, #7698f8 6px, #648BF0 6px);
+  /* background-image: linear-gradient(to top, #7698f8 6px, #648BF0 6px); */
+  background-color: #648BF0;
+  box-shadow: 0 -6px 0 0 #7698f8 inset;
+  transition: all 0.5s ease-in-out;
 }
 
 .slider__container {
@@ -403,10 +409,12 @@ img {
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .slider--blue .slider__control {
   background-image: url("assets/arrow-blue.svg");
+  transition: all 0.5s ease-in-out;
 }
 
 .slider__control:hover,
@@ -1370,6 +1378,16 @@ img {
     background-repeat: no-repeat;
     background-position: 20px 26px;
     border: none;
+    transition: all 0.5s ease-in-out
+  }
+
+  .page-header__logo {
+    position: fixed;
+    top: 25px;
+    left: 39.5%;
+    z-index: 5;
+
+    transition: left 0.5s ease-in-out;
   }
 
   .page-header__nav {
@@ -1378,29 +1396,30 @@ img {
     left: 0;
     z-index: 2;
 
-    display: none;
+    display: block;
     width: 278px;
     height: 100vh;
     padding-left: 71px;
 
     background-color: #2D303A;
     box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+    transform: translateX(-120%);
+    transition: all 0.5s ease-in-out;
   }
 
   .page-header__shadow {
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
 
     width: 100vw;
     height: 100vh;
 
     background: #2D303A;
-    opacity: 0.6;
   }
 
   .logo {
-    z-index: 5;
-
     font-size: 19.6875px;
     line-height: 24px;
   }
@@ -1429,21 +1448,25 @@ img {
   .page-header--open .page-header__toogle {
     background-position: 24px 29px;
     transform: rotate(90deg);
+    transition: all 0.5s ease-in-out;
   }
 
   .page-header--open .page-header__logo {
-    position: fixed;
-    top: 25px;
-    left: 71px;
-
+    left: 19%;
+    /* transform: translateX(-85%); */
+    transition: left 0.5s ease-in-out;
   }
 
   .page-header--open .page-header__nav {
     display: block;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
   }
 
   .page-header--open .page-header__shadow {
     display: block;
+
+    opacity: 0.6;
   }
 
 
