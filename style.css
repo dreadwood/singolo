@@ -631,14 +631,16 @@ img {
 
 .portfolio__item-link {
   display: block;
+  transition: all 0.5s ease-in-out;
 }
 
 .portfolio__item-link:hover,
 .portfolio__item-link:focus {
-  opacity: 0.5;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
 }
 
-.portfolio__item-link--active .portfolio__img {
+.portfolio__item--active .portfolio__img {
   box-shadow: 0 0 0 5px #F06C64;
   border-radius: 5px;
 }
