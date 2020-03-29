@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  min-width: 375px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -548,10 +548,6 @@ img {
   letter-spacing: -0.06px;
 }
 
-
-
-
-
 .portfolio {
   background-image: linear-gradient(to top, #323746 6px, #2d303a 6px);
 }
@@ -758,19 +754,19 @@ img {
 }
 
 .about-us__icon-link--fb {
-  background-image: url("assets/icon-facebook.png")
+  background-image: url("assets/icon-facebook.svg")
 }
 
 .about-us__icon-link--google {
-  background-image: url("assets/icon-google.png")
+  background-image: url("assets/icon-google.svg")
 }
 
 .about-us__icon-link--tw {
-  background-image: url("assets/icon-twitter.png")
+  background-image: url("assets/icon-twitter.svg")
 }
 
 .about-us__icon-link--linkedin {
-  background-image: url("assets/icon-linkedin.png")
+  background-image: url("assets/icon-linkedin.svg")
 }
 
 .form {
@@ -942,21 +938,21 @@ img {
 }
 
 .contact__adress-item--location::before {
-  left: -20px;
+  left: -21px;
   top: 2px;
 
-  width: 7px;
-  height: 11px;
-  background-image: url("assets/icon-location.png");
+  width: 8px;
+  height: 12px;
+  background-image: url("assets/icon-location.svg");
 }
 
 .contact__adress-item--tel::before {
-  left: -22px;
+  left: -23px;
   top: 1px;
 
-  width: 11px;
-  height: 11px;
-  background-image: url("assets/icon-phone.png");
+  width: 12px;
+  height: 12px;
+  background-image: url("assets/icon-phone.svg");
 }
 
 .contact__adress-item--email::before {
@@ -964,8 +960,8 @@ img {
   top: 4px;
 
   width: 13px;
-  height: 8px;
-  background-image: url("assets/icon-mail.png");
+  height: 9px;
+  background-image: url("assets/icon-mail.svg");
 }
 
 .page-footer {
@@ -1027,19 +1023,19 @@ img {
 }
 
 .social__link--fb {
-  background-image: url("assets/icon-facebook.png")
+  background-image: url("assets/icon-facebook.svg")
 }
 
 .social__link--google {
-  background-image: url("assets/icon-google.png")
+  background-image: url("assets/icon-google.svg")
 }
 
 .social__link--tw {
-  background-image: url("assets/icon-twitter.png")
+  background-image: url("assets/icon-twitter.svg")
 }
 
 .social__link--linkedin {
-  background-image: url("assets/icon-linkedin.png")
+  background-image: url("assets/icon-linkedin.svg")
 }
 
 .modal {
@@ -1140,6 +1136,11 @@ img {
     margin-bottom: 4px;
   }
 
+  .page-main__text {
+    text-align: left;
+    letter-spacing: 0;
+  }
+
   .slider__item {
     width: 100%;
     height: calc(100vw / 1.7);
@@ -1182,14 +1183,22 @@ img {
 
   .services__text {
     height: 99px;
+    margin-right: -20px;
     margin-bottom: 28px;
   }
 
   .list__item {
+    flex-basis: 45%;
+    min-width: 300px;
+    margin-right: 50px;
     margin-bottom: 52px;
 
     background-size: 60px 60px;
     background-position: 0 0;
+  }
+
+  .list__item:nth-child(2n) {
+    margin-right: 0;
   }
 
   .list__text {
@@ -1201,7 +1210,6 @@ img {
   }
 
   .list__item--responsive {
-
     background-position: 0 2px;
   }
 
@@ -1225,6 +1233,7 @@ img {
 
   .portfolio__text {
     min-height: 61px;
+    margin-right: 20px;
     margin-bottom: 11px;
   }
 
@@ -1240,12 +1249,12 @@ img {
   .portfolio__item {
     flex-basis: 30%;
     flex-grow: 2;
-    margin-right: 19.65px;
-    margin-bottom: 19.65px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   .portfolio__item:nth-child(4n+4) {
-    margin-right: 19.65px;
+    margin-right: 20px;
   }
 
   .portfolio__item:nth-child(3n+3) {
@@ -1260,7 +1269,7 @@ img {
   .about-us__container {
     padding-top: 55px;
     padding-bottom: 35px;
-    padding-left: 42px;
+    padding-left: 40px;
   }
 
   .about-us__text {
@@ -1269,6 +1278,7 @@ img {
 
   .about-us__list {
     justify-content: space-between;
+    margin-left: 2px;
   }
 
   .about-us__item {
@@ -1290,6 +1300,7 @@ img {
 
   .about-us__item-title {
     margin-bottom: 2px;
+    margin-left: 0px;
   }
 
   .about-us__item-text {
@@ -1304,8 +1315,9 @@ img {
   }
 
   .form__text {
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   }
+
   .form__fieldset {
     width: 64.2%;;
     margin-left: -3px;
@@ -1365,7 +1377,7 @@ img {
   }
 
   .page-header__toogle {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
@@ -1384,7 +1396,7 @@ img {
   }
 
   .page-header__logo {
-    position: fixed;
+    position: absolute;
     top: 25px;
     left: 39.5%;
     z-index: 5;
@@ -1393,7 +1405,7 @@ img {
   }
 
   .page-header__nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
@@ -1471,12 +1483,6 @@ img {
     opacity: 0.6;
   }
 
-
-
-
-
-
-
   .slider__container {
     padding: 0;
   }
@@ -1486,18 +1492,18 @@ img {
   }
 
   .slider__image--vertical {
-    width: 88.3px;
-    height: 177.61px;
+    width: 30.2%;
+    height: 82%;
 
-    background-size: 88.3px 177.61px;
+    background-size: 100%;
   }
 
   .slider__image--horizontal {
-    width: 177.84px;
-    height: 88.35px;
+    width: 60.6%;
+    height: 40%;
     margin-top: 0;
 
-    background-size: 177.84px 88.35px;
+    background-size: 100%;
   }
 
   .slider__control {
@@ -1522,23 +1528,28 @@ img {
   }
 
   .services__text {
-    height: 204px;
-    margin-bottom: 35px;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 29px;
   }
 
   .list__item {
+    flex-basis: 90%;
     margin-bottom: 28px;
+  }
 
-    background-size: 60px 60px;
-    background-position: 0 0;
+  .list_text {
+    height: auto;
+    min-height: 40px;
   }
 
   .portfolio__container {
     padding-top: 45px;
-    padding-bottom: 26px;
+    padding-bottom: 37px;
   }
 
   .portfolio__text {
+    margin-right: 0;
     margin-bottom: 16px;
   }
 
@@ -1553,16 +1564,16 @@ img {
   .portfolio__item {
     flex-basis: 40%;
     flex-grow: 2;
-    margin-right: 13px;
-    margin-bottom: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 
   .portfolio__item:nth-child(4n+4) {
-    margin-right: 13px;
+    margin-right: 10px;
   }
 
   .portfolio__item:nth-child(3n+3) {
-    margin-right: 13px;
+    margin-right: 10px;
   }
 
   .portfolio__item:nth-child(2n+2) {
@@ -1584,8 +1595,6 @@ img {
 
   .about-us__text {
     margin-bottom: 24px;
-    /* delete */
-    height: 210px;
   }
 
   .about-us__item {
@@ -1600,7 +1609,7 @@ img {
   }
 
   .about-us__item-text {
-    height: 44px;
+    height: auto;
     margin-bottom: 11px;
   }
 
@@ -1649,6 +1658,14 @@ img {
     line-height: 25px;
   }
 
+  .contact__adress-item--tel::before {
+    top: 3px;
+  }
+
+  .contact__adress-item--email::before {
+    top: 5px;
+  }
+
   .page-footer__container {
     justify-content: center;
   }
@@ -1661,5 +1678,22 @@ img {
     left: 10%;
 
     width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  .slider__item {
+    width: 320px;
+    height: 188.23px;
+  }
+
+  .list__item {
+    flex-basis: auto;
+    min-width: auto;
+    margin-right: 0;
+  }
+
+  .portfolio__filter-button {
+    min-height: 42px;
   }
 }
