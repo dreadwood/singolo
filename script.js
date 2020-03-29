@@ -40,27 +40,14 @@ nav.addEventListener('click', function (evt) {
   };
 });
 
-// document.addEventListener('scroll', function (evt) {
-//   let section = document.querySelectorAll('section');
-//   let currentY = window.scrollY;
-//   // console.log(window.scrollY);
-
-//   section.forEach(function (item) {
-//     if (item.offsetTop <= currentY) {
-//       navItems.forEach(function (item) {
-//         item.classList.remove('nav__item--active');
-//       });
-//     }
-//     console.log(item.offsetTop)
-//   })
-// })
-
 
 // Слайдер карусель
 let sliderSection = document.querySelector('.slider')
+let sliderContainer = document.querySelector('.slider__container')
 let sliderButtonBack = sliderSection.querySelector('.slider__control--back');
 let sliderButtonNext = sliderSection.querySelector('.slider__control--next');
 let sliders = sliderSection.querySelectorAll('.slider__item');
+let previousSlide = sliders.length - 1;
 let curentSlide = 0;
 
 function changeSlider () {
@@ -73,6 +60,7 @@ function changeSlider () {
 
 sliderButtonBack.addEventListener('click', function (evt) {
   evt.preventDefault();
+  previousSlide = curentSlide;
   if (curentSlide > 0) {
     curentSlide--;
   } else {
@@ -83,6 +71,7 @@ sliderButtonBack.addEventListener('click', function (evt) {
 
 sliderButtonNext.addEventListener('click', function (evt) {
   evt.preventDefault();
+  previousSlide = curentSlide;
   if (curentSlide < sliders.length - 1) {
     curentSlide++;
   } else {
